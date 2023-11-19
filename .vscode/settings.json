@@ -14,7 +14,8 @@
       "tuple": "cpp",
       "map": "cpp",
       "ostream": "cpp",
-      "cmath": "cpp"
+      "cmath": "cpp",
+      "iosfwd": "cpp"
     },
     "editor.rulers": [
         {
