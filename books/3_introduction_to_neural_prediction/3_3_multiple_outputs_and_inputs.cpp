@@ -5,7 +5,7 @@
 double WeightSum(const std::vector<double>& a, const std::vector<double>& b) {
     assert(a.size() == b.size());
     double output = 0.0;
-    for (int i = 0; i < a.size(); ++i) {
+    for (size_t i = 0; i < a.size(); ++i) {
         output += a[i] * b[i];
     }
     return output;
@@ -14,7 +14,7 @@ double WeightSum(const std::vector<double>& a, const std::vector<double>& b) {
 std::vector<double> VectorMatMul(const std::vector<double>& numbers, const std::vector<std::vector<double>>& matrix) {
     std::vector<double> output = {0.0, 0.0, 0.0};
     assert(numbers.size() == matrix.size());
-    for (int i = 0; i < matrix.size(); ++i) {
+    for (size_t i = 0; i < matrix.size(); ++i) {
         output[i] += WeightSum(numbers, matrix[i]);
     }
     return output;

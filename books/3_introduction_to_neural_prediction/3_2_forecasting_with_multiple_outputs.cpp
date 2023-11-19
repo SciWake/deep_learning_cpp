@@ -6,7 +6,7 @@
 std::vector<double> ElementMul(double number, const std::vector<double>& data) {
     std::vector<double> output = {0.0, 0.0, 0.0};
     assert(output.size() == data.size());
-    for (int i = 0; i < data.size(); ++i) {
+    for (size_t i = 0; i < data.size(); ++i) {
         output[i] += number * data[i];
     }
     return output;

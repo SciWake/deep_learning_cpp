@@ -5,7 +5,7 @@
 double WeightSum(const std::vector<double>& a, const std::vector<double>& b) {
     assert(a.size() == b.size());
     double output = 0.0;
-    for (int i = 0; i < a.size(); ++i) {
+    for (size_t i = 0; i < a.size(); ++i) {
         output += a[i] * b[i];
     }
     return output;
