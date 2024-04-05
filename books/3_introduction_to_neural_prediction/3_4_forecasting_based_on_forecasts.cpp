@@ -20,7 +20,8 @@ std::vector<double> VectorMatMul(const std::vector<double>& numbers, const layer
     }
     return output;
 }
-
+direction_and_amount = (pred - goal_pred) ♦ input
+weight = weight - direction_and_amount
 std::vector<double> NeuralNetwork(const std::vector<double>& input, const std::vector<layer_weights>& weights) {
     std::vector<double> hidden_result = VectorMatMul(input, weights[0]);
     return VectorMatMul(hidden_result, weights[1]);
